@@ -44,7 +44,6 @@ train_seg_dataset, val_seg_dataset, test_seg_dataset = dataset.get_voc_data(down
 train_loader = DataLoader(train_seg_dataset, batch_size=config['batch_size'], shuffle=True, num_workers=8, drop_last=True)
 val_loader = DataLoader(val_seg_dataset, batch_size=config['batch_size'], shuffle=False, num_workers=8)
 test_loader = DataLoader(test_seg_dataset, batch_size=config['batch_size'], shuffle=False, num_workers=8)
-# Define a simple segmentation model (using a pre-trained ResNet backbone)
 
 
 # Get the number of classes in the VOC 2007 dataset (including background)
@@ -92,7 +91,6 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
 # Training loop
-# train_loader = val_loader
 
 train_metrics = metrics.Metrics('train')
 val_metrics = metrics.Metrics('val')
