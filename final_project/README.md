@@ -4,8 +4,7 @@ All code is released under a CC-BY-NC-SA license
 
 > Leveraging transformers for image segmentation
 
-![Project Screenshot (Optional)](./assets/screenshot.png)
-_Optional: Include a visually appealing screenshot or GIF of your project._
+![Project Screenshot](./assets/prediction_gif.gif)
 
 ## Features
 
